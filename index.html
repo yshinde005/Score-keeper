@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Score Keeper</title>
   </head>
+
   <body>
-    <script src="app.js"></script>
+    <div class="content">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__image">
+            <img class="card__main-img" src="ping-pong.jpg" alt="ping pong" />
+          </div>
+          <h1 class="card__header">Ping Pong Score Keeper</h1>
+          <div class="card__score-container">
+            <span class="card__first-score"> 0 </span>
+            <span class="card__score-to">:</span>
+            <span class="card__second-score"> 0 </span>
+            <div class="card__advice">Use the buttons below to keep score.</div>
+            <div class="card__playing-to">
+              <label class="card__label" for="playng-to">Playing To:</label>
+              <select class="card__select" name="playing-to" id="playing-to">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+          </div>
+          <div class="card__buttons buttons">
+            <span class="buttons__main-buttons">
+              <button class="buttons__button button-1">+1 Player One</button>
+              <button class="buttons__button button-2">+1 Player Two</button>
+            </span>
+            <button class="buttons__button button-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="appn.js"></script>
   </body>
 </html>
